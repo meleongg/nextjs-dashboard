@@ -3,10 +3,7 @@
 import { authenticate } from "@/app/lib/actions";
 import { lusitana } from "@/app/ui/fonts";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
-import ExclamationCircleIcon, {
-  AtSymbolIcon,
-  KeyIcon,
-} from "@heroicons/react/24/outline";
+import { AtSymbolIcon, KeyIcon } from "@heroicons/react/24/outline";
 import { useFormState } from "react-dom";
 import { Button } from "./button";
 
@@ -73,7 +70,6 @@ export default function LoginForm() {
         >
           {errorMessage && (
             <>
-              <ExclamationCircleIcon className="h-5 w-5 text-red-500" />
               <p className="text-sm text-red-500">{errorMessage}</p>
             </>
           )}
